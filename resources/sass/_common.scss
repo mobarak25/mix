@@ -1,0 +1,67 @@
+/*===============================*/
+/*====== DATE:2020-june-08 ======*/
+/*===============================*/
+body{
+	@include font(text-color, 14px, 20px, regular);
+	font-family: 'Muli', sans-serif;
+}
+
+/*==============================*/
+/*=====   Common styles   ======*/
+/*==============================*/
+a{color: map-get($colors, text-color);}
+a:hover{text-decoration:none;color: map-get($colors, text-color)}
+h1,h2,h3,h4,h5,h6,p,div,ul,address{margin: 0;}
+ul{list-style: none; padding: 0; margin: 0;}
+
+/*-----------------------------*/
+/*-------- common wedget ------*/
+/*-----------------------------*/
+.site-btn{
+	@include button-base(16px 30px 12px);
+}
+.site-shadow{
+	@include border-radius(5px);
+	@include site-shadow();
+}
+.site-social a{
+	margin: 0 5px;
+	color: #d7d7d7;
+	font-size: 25px;
+}
+
+/*-----------------------------*/
+/*--------Inner Banner---------*/
+/*-----------------------------*/
+.inner-banner{
+	padding: 0 0 82px;
+	margin: 0;
+	position: relative;
+}
+.inner-banner img{width:100%;}
+.banner-container{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.banner-title{
+	padding: 180px 0 0;
+	@include font(title-color, 65px, 70px, bold);
+}
+
+/*-----------------------------*/
+/*----------- Footer ----------*/
+/*-----------------------------*/
+.footer{
+	padding: 54px 0;
+	margin: 0;
+	border-top: 1px solid #dedede;
+	background-color: #ebecf0;
+}
+.footer p{
+	margin: 0;
+	color: #3f3f3f;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+}

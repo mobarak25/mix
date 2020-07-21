@@ -1,0 +1,135 @@
+@mixin font($color, $size, $line-height, $weight) {
+    @if $color {
+        color: map-get($colors, $color);
+    }
+    font-size: $size;
+    line-height: $line-height;
+    @if $weight {
+        font-weight: map-get($font-weight, $weight);
+    }
+}
+
+@mixin center($width, $height) {
+	@if $width {
+		width: $width;
+	}
+	@if $height {
+		height: $height;
+	}
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin sudo ($width, $height, $leftRtiht, $leftRtiht-value, $topBtm, $topBtm-value, $color){
+	content: '';
+	width: $width;
+	height: $height;
+	position: absolute;
+	#{$leftRtiht}: $leftRtiht-value;
+	#{$topBtm}: $topBtm-value;
+	@include transition(all, 400ms);
+	@if $color {
+		background-color: map-get($colors, $color);
+	}
+}
+
+@mixin absolute ($width, $height, $leftRtiht, $leftRtiht-value, $topBtm, $topBtm-value){
+	@if $width {
+		width: $width;
+	}
+	@if $height {
+		height: $height;
+	}
+	position: absolute;
+	#{$leftRtiht}: $leftRtiht-value;
+	#{$topBtm}: $topBtm-value;
+}
+
+@mixin chart-circle($width, $height) {
+	width: $width;
+	height: $height;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin button-base($padding) {
+	height: 60px;
+	padding:$padding;
+    @include font(white-color, 20px, 26px, bold);
+	display: inline-block;
+	position: relative;
+	background-color: map-get($colors, brand);
+	border-radius: 30px;
+	transition: $transition;
+	&.with-arrow{
+		padding:16px 76px 12px 30px;
+		&:after{
+			content: '';
+			@include absolute(29px, 19px, right, 30px, top, 22px);
+			background: url(../images/long-right-arrow.png) no-repeat;
+		}
+	}
+	
+
+	&:hover{
+		color: map-get($colors, white-color);;
+		background-color: #d6961d;
+	}
+}
+
+@mixin site-shadow() {
+	box-shadow: 0 1px 6px 1px map-get($colors, shadow-color);
+	-webkit-box-shadow: 0 1px 6px 1px map-get($colors, shadow-color);
+	-moz-box-shadow: 0 1px 6px 1px map-get($colors, shadow-color);
+}
+
+//Cross browser CSS3 mixins
+@mixin box-shadow($left, $top, $radius, $blur, $color) {
+	box-shadow: $left $top $radius $blur $color;
+	-webkit-box-shadow: $left $top $radius $blur $color;
+	-moz-box-shadow: $left $top $radius $blur $color;
+}
+
+@mixin transition($property, $duration, $easing: linear) {
+	transition: $property $duration $easing;
+	-webkit-transition: $property $duration $easing;
+	-moz-transition: $property $duration $easing;
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+//media screen
+@mixin media($name){
+	@if ($name == "other") {
+        @media (min-width: 1400px){
+            @content 
+        }
+    }@if ($name == "xl") {
+        @media (max-width: 1199px){
+            @content 
+        }
+    }@if ($name == "lg") {
+        @media (max-width: 991px){
+            @content 
+        }
+    }@if ($name == "md") {
+        @media (max-width: 767px){
+            @content 
+        }
+    }@if ($name == "sm") {
+        @media (max-width: 576px){
+            @content 
+        }
+    }
+}

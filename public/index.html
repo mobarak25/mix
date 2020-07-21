@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>X Index Companies</title>
+    <meta name="keywords" content="X Index Companies">
+    <meta name="description" content="X Index Companies of Bangladesh">
+
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.pagepiling.css" />
+    <link rel="stylesheet" href="css/icofont.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css">
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css" />
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+    <div id="app">
+        <site-header></site-header>
+
+        <site-menu></site-menu>
+
+        <index></index>
+
+        <!--Start Modal -->
+        <slider-modal></slider-modal>
+        
+    </div>
+    <script src="js/app.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/pagepiling.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <script>
+        function range(end, gap) {
+            var ans = [];
+            for (let i = 0; i <= end; i += gap) {
+                ans.push(i);
+            }
+            return ans;
+        }
+
+        var gap = 3.12;
+        var total = 100 - gap;
+        var Arr = range(total, gap);
+        var strokWidth = 0.8;
+        var strokWidthWhite = 0.9;
+        var string = '';
+        for (let i = 0; i < Arr.length; i++) {
+            if (i % 2) {
+                string += `<circle class="donut-segment segment-1" cx="21" cy="21" r="15.91549430918954" fill="transparent"
+stroke="#eca633" stroke-width="`+ strokWidth + `" stroke-dasharray="100" stroke-dashoffset="` + Arr[i] + `"></circle>`;
+            } else {
+                string += `<circle class="donut-segment segment-1" cx="21" cy="21" r="15.91549430918954" fill="transparent"
+stroke="#f8f8f8" stroke-width="`+ strokWidthWhite + `" stroke-dasharray="100" stroke-dashoffset="` + Arr[i] + `"></circle>`;
+            }
+        }
+        document.getElementById('box').innerHTML = string;
+    </script>
+</body>
+</html>

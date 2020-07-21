@@ -1,0 +1,118 @@
+.career-search{
+	padding: 0 0 114px;
+	margin: 0;
+	.career-search-box{
+		width:1010px;
+		input{
+			width: 100%;
+			padding: 16px 70px 12px 22px;
+			@include font(input-color,17px,22px, light);
+			@include border-radius(4px);
+			@include site-shadow();
+			border: 1px solid #e0dede;
+			font-family: 'Muli', sans-serif;
+
+			&:focus{outline: none;}
+		}
+		button{
+			cursor: pointer;
+			color: #e0e0e0;
+			font-size: 30px;
+			@include absolute(false, false,right,15px,top,10px);
+			border: 0;
+			background-color: transparent;
+			i{
+				@include transition(all, 400ms);
+			}
+			&:hover i{
+				color: map-get($colors, brand);
+			}
+		}
+	}
+}
+.career-position{
+	padding-bottom: 28px;
+	a{
+		height: 145px;
+		padding: 54px 10px 0;
+		margin: 0 0 63px;
+		display: block;
+		text-align: center;
+		position: relative;
+		border: 1px solid #fff;
+		@include border-radius(5px);
+		@include transition(all, 400ms);
+		@include site-shadow();
+
+		.career-position-icon{
+			@include absolute(64px, 64px,left,50%,top,-32px);
+			background-color: map-get($colors, white-color);
+			transform: translateX(-50%);
+			@include border-radius(50%);
+			@include box-shadow(0, 3px, 6px, 1px, map-get($colors, shadow-color));
+			i{
+				color: #a3a2a2;
+				font-size: 40px;
+			}
+		}
+		h4{
+			padding: 0 0 9px;
+			@include font(title-color, 22px, 28px, bold);
+		}
+		span{
+			@include font(text-color, 16px, 20px, false);
+			display: block;
+		}
+		&:hover{
+			border-color: map-get($colors, brand);
+		}
+	}
+}
+.career-register{
+	padding: 70px 0 0;
+	background-color: #f7f7f7;
+	.career-register-left{
+		h2{
+			padding: 0 0 22px;
+			@include font(title-color, 50px, 70px, bold);
+		}
+		p{
+			padding: 0 0 28px;
+			@include font(false, 18px, 30px, false);
+		}
+	}
+}
+.career-why-join{
+	padding: 84px 0 0;
+	h2{
+		padding: 0 0 35px;
+		@include font(title-color, 40px, 50px, bold);
+	}
+	.career-why-box{
+		padding-bottom: 42px;
+		.career-why-left{
+			width: 32%;
+			h3{
+				@include font(title-color, 24px, 38px, bold);
+				position: relative;
+				&:after{
+					content: '';
+					width: 123px;
+					height: 5px;
+					position: absolute;
+					left: 0;
+					bottom: -7px;
+					background-color: #ecedf1;
+				}
+			}
+		}
+		.career-why-right{
+			width: 68%;
+			p{
+				@include font(text-color, 17px, 28px, false);
+
+				&:not(:last-child){padding-bottom: 27px;}
+			}
+		}
+	}
+}

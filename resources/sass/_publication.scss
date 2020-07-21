@@ -1,0 +1,41 @@
+.publication-left{
+    width: calc(100% - 412px);
+}
+.publication-right{
+    width: 350px;
+}
+.site-shadow{
+    margin-bottom: 62px;
+    @include border-radius(15px);
+    
+}
+.publication-img{
+    @include border-radius(15px);
+    @include box-shadow(0, 6px, 6px, 1px, map-get($colors, shadow-color));
+    img{
+        width: 100%;
+        @include border-radius(15px);
+    }
+}
+.publication-content{
+    padding: 56px 60px 48px;
+    span{
+        @include font(false, 15px, 22px, false);
+    }
+    small{
+        font-weight: 300;
+    }
+    b{
+        font-weight: 700;
+    }
+    h3{
+        padding: 0 0 12px;
+        @include font(title-color, 30px, 50px, bold);
+    }
+    p{
+        @include font(false, 17px, 28px, false);
+    }
+}
+.publication-btn{
+    padding:32px 0 0;
+}

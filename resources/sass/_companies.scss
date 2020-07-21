@@ -1,0 +1,118 @@
+.companies{
+    width: 1110px;
+    padding: 90px 0 82px;
+    margin: 0 auto;
+
+    .menu-close{
+        @include absolute(false, false,right,70px,top,70px);
+    }
+}
+.companies-logo{
+    padding-bottom: 70px;
+}
+.companies-desc{
+    max-width: 830px;
+    padding-bottom: 85px;
+    margin: 0 auto;
+    p{
+        padding-bottom: 28px;
+        @include font(false, 17px, 28px, false)
+    }
+}
+.companies-project-wrap{
+    padding-bottom: 90px;
+}
+.companies-project{
+    position: relative;
+}
+.companies-project::after,
+.companies-project::before{
+    content: '';
+    clear: both;
+    display: table;
+}
+.companies-project-img{
+    width: 58.2%;
+    overflow: hidden;
+    @include site-shadow;
+    @include border-radius(18px);
+
+    img{ width: 100%;}
+}
+.companies-project-info{
+    padding: 30px 35px 35px 40px;
+    @include border-radius(7px);
+    transform: translateY(-50%);
+    background-color: #fff;
+    @include absolute(55.4%, false, right,0, top,50%);
+    @include box-shadow(0, 1px, 5px, 1px, darken(map-get($colors, shadow-color),8%));
+
+    h3{
+        padding-bottom: 11px;
+        margin-bottom: 12px;
+        position: relative;
+        @include font(title-color, 30px, 40px, semi-bold);
+
+        &:after{
+            @include sudo(245px, 3px, left, 0, bottom, 0, shadow-color)
+        }
+    }
+    p{
+        padding-bottom: 20px;
+        @include font(false, 17px, 28px, false);
+    }
+    a{
+        position: relative;
+        @include font(brand, 18px, 28px, bold);
+        @include transition(all, 400ms);
+
+        &:hover{
+            color: darken(map-get($colors, brand),15);
+        }
+        &::after{
+            @include transition(all, 400ms);
+            @include sudo(100%, 1px, left, 0, bottom, 0, brand);
+        }
+        &:hover::after{
+            left: 100%;
+            opacity: 0;
+        }
+    }
+
+}
+.companies-project-box .companies-project-wrap:nth-child(2n) .companies-project-img{
+    float: right;
+}
+.companies-project-box .companies-project-wrap:nth-child(2n) .companies-project-info{
+    right: auto;
+    left: 0;
+}
+.companies-btm{
+    padding: 0;
+    a{
+        position: relative;
+        @include transition(all, 400ms);
+        @include font(text-color,18px,30px,bold);
+        i{
+            font-size: 30px;
+            @include transition(all,100ms);
+            @include absolute(false, false,left,-35px,bottom,-2px)
+
+        }
+
+        &:hover{
+            color: map-get($colors, brand);
+        }
+        &:hover i{
+            left: -50px;
+            color: map-get($colors, brand);
+        }
+        &:last-child:hover i{
+            right: -50px;
+        }
+    }
+    a:last-child i{
+        left: auto;
+        right: -35px;
+    }
+}

@@ -1,0 +1,82 @@
+.career-details{
+	padding: 0 0 82px;
+
+	.site-shadow{
+		padding-bottom: 93px;
+		border-radius: 18px;
+
+		.career-details-box{
+			padding: 87px 89px 0 140px;
+
+			h2{
+				padding: 0 0 29px;
+				@include font(title-color,40px,50px, bold);
+				position: relative;
+				i{
+					position: absolute;
+					left: -55px;
+					top: 5px;
+				}
+			}
+			h3{
+				padding: 0 0 18px;
+				@include font(title-color, 21px, 28px, bold);
+			}
+			h4{
+				padding: 0 0 19px;
+				@include font(brand, 21px, 26px, bold);
+			}
+			.career-details-in{
+				padding-bottom: 40px;
+				p{
+					@include font(false, 17px, 28px, false);
+				}
+				li{
+					padding-left: 36px;
+					@include font(false, 17px, 24px, false);
+					position: relative;
+					&:not(:last-child){
+						padding-bottom: 19px;
+					}
+					&:after{
+						content: "";
+						width: 17px;
+						height: 16px;
+						position: absolute;
+						left: 0;
+						top: 5px;
+						background: url('../images/cursor.png') no-repeat;
+					}
+				}
+			}
+		}
+	}
+}
+
+.career-details-apply{
+	padding-top: 40px;
+	span{
+		padding: 0 0 23px;
+		@include font(false, 21px, 28px, false);
+	}
+	.career-details-btn{
+		padding: 0 0 90px;
+
+		.site-btn{
+			width: 236px;
+			padding-left: 0;
+			padding-right: 0;
+			margin: 0 12px;
+		}
+	}
+	
+}
+.career-details-btm{
+	padding: 11px 89px 11px 140px;
+	border-top: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
+
+	span{
+		@include font(false, 17px, 28px, semi-bold);
+	}
+}

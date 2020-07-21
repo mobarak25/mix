@@ -1,0 +1,322 @@
+.header{
+	width: 100%;
+	padding: 40px 48px 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index:5;
+}
+.menu-open{
+    width: 43px;
+    text-align: right;
+    cursor: pointer;
+    span{
+        display: block;
+        padding-bottom: 5px;
+        position: relative;
+        @include transition(all, 400ms);
+        transition-delay: 0.2s;
+        @include font(false, 17px, 17px, false);
+    }
+    i{
+        height: 1px;
+        display: block;
+        position: relative;
+        @include transition(all, 400ms);
+        transition-delay: 0.3s;
+        border-bottom: 2px solid map-get($colors, text-color );
+        &:after{
+            @include  sudo(28px, 2px, right,0,bottom, -10px, text-color);
+            transition-delay: 0.3s;
+        }
+    }
+}
+.menu-handel-out .menu-open i,
+.menu-handel-out .menu-open span{
+    transform: scale(0);
+}
+.site-menu{
+    min-height: 100%;
+    padding-bottom: 282px;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.9) ;
+    @include transition(all, 1s);
+    @include absolute(100%, false,left,0,top,0);
+    background-color: map-get($colors, white-color );
+}
+.active-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) ;
+}
+.menu-top{
+    padding: 36px 42px 98px 58px;
+}
+.menu-close{
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    a{
+        padding: 2px 0;
+        z-index: 2;
+        @include center(false, false);
+        @include transition(all, 200ms);
+        @include font(false, 18px, 18px, false);
+        background-color: map-get($colors, white-color);
+    }
+    .line-1{
+        @include center(72px, 1px);
+        @include transition(all, 300ms);
+        transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+        background-color: map-get($colors, text-color);
+    }
+    .line-2{
+        @extend .line-1;
+        transform: translate(-50%, -50%) rotate(45deg) scale(1);
+    }
+
+    &:hover a{color: map-get($colors, brand);}
+    &:hover .line-1{transform: translate(-50%, -50%) rotate(-45deg) scale(0);}
+    &:hover .line-2{
+        background-color: map-get($colors, brand);
+        transform: translate(-50%, -50%) rotate(45deg) scale(1.2);
+    }
+}
+.menu-mid{
+    padding: 36px 0 20px 58px;
+}
+.menu-links{
+    width: 522px;
+    padding: 0;
+    ul{
+        padding: 0;
+        li{
+            padding: 0;
+            @include font(text-color, 20px, 30px, false);
+            a{
+                padding: 12px 0 16px;
+                display: block;
+                position: relative;
+                @include transition(all, 400ms);
+                border-bottom: 1px solid lighten(map-get($colors, text-color), 30%);
+                &::after{
+                    @include sudo(0,1px,left,0,bottom,-1px,brand);
+                }
+                &:hover{
+                    color: map-get($colors, brand);
+                    padding-left: 5px;
+                    border-color:map-get($colors, white-color);
+                }
+                &:hover::after{
+                    width: 100%;
+                }
+            }
+        }
+        li.active > a,
+        li.active > a::after{
+            width: 100%;
+            color: map-get($colors, brand);
+        }
+        li.has-child {
+            padding: 0;
+            position: relative;
+
+            ul{
+                padding: 0 20px;
+                width: 100%;
+                display: none;
+                li{
+                    padding: 0;
+                    @include font(text-color, 18px, 26px, false);
+                    a{
+                        padding:5px 0 9px;
+                    }
+                }
+            }
+            i{
+                @include absolute(false, false,right,43px,top,16px);
+                color: map-get($colors, brand);
+            }
+
+        }
+    }
+}
+.menu-contact{
+    padding: 0;
+    h3{
+        padding:0 0 18px 15px;
+        @include font(title-color, 25px, 30px, semi-bold);
+    }
+}
+.menu-contact-box{
+    padding: 0 0 24px 45px;
+    position: relative;
+    h4{
+        color: lighten(map-get($colors, text-color), 20%);
+        @include font(false, 14px, 24px, medium);
+    }
+    address{
+        text-transform: uppercase;
+        @include font(text-color, 18px, 24px, false); 
+    }
+    a{
+        @include font(text-color, 18px, 24px, false); 
+    }
+    i{
+        @include absolute(false, false,left,0,top,29px);
+        @include font(brand, 25px, 25px, false); 
+    }
+}
+.send-query{
+    padding: 17px 0 0;
+    .site-btn{
+        padding: 0 42px 0 0;
+        height: auto;
+        position: relative;
+        color: map-get($colors, brand);
+        background-color: map-get($colors, white-color );
+        i{
+            @include absolute(30px, 13px,right,0,top,9px);
+            @include transition(all, 400ms);
+            background: url(../images/long-down-arrow.png) right center;
+        }
+        &:hover i{
+            right: -7px;
+        }
+    }
+}
+.menu-btm{
+    overflow: hidden;
+    @include absolute(100%, false,left,0,bottom,0);
+}
+.menu-btm-top{
+    padding: 0 0 18px;
+    span{
+        @include font(brand,20px, 30px, semi-bold);
+        position: relative;
+        i{
+            display: block;
+        }
+    }
+}
+.menu-slider{
+    margin: 0 -5px;
+}
+.menu-slider-box{
+    padding: 0 5px;
+    &:focus{
+        outline: none;
+    }
+}
+.slideIn{
+    cursor: pointer;
+    position: relative;
+    img{ 
+        width: 100%;
+        &:focus{outline: 0;}
+    }
+    .cover{
+        overflow: hidden;
+        cursor: pointer;
+        z-index: 2;
+        @include absolute(100%, 100%,left,0,top,0);
+        @include transition(all, 400ms);
+        transform: scale(0);
+        background-color:rgba( map-get($colors, brand ), .7 );
+        
+        h3{
+            @include center(false, false);
+            top:70%;
+            opacity: 0;
+            @include font(white-color,25px, 30px,bold);
+            @include transition(all, 400ms);
+            transition-delay: 100ms;
+            &::after{
+                @include transition(all, 5s);
+                transition-delay: 5s;
+                @include sudo(0, 2px, left,0,bottom,0,white-color);
+            }
+        }
+        i{
+            width: 25px;
+            height: 24px;
+            @include center(false, false);
+            @include transition(all, 300ms);
+            transition-delay: 300ms;
+            background: url(../images/angle-arrow.png) no-repeat;
+        }
+    }
+
+    &:hover .cover{
+         transform: scale(1);
+    }
+    &:hover h3{
+         top: 50%;
+         opacity: 1;
+        
+    }
+    &:hover h3:after{
+        width: 100%
+   }
+    &:hover i{
+        top: 15%;
+        left: 85%;
+   }
+}
+.slick-arrow{
+    border: 0;
+    z-index: 2;
+    text-indent: -5000px;
+    @include absolute(137px, 100%,left,auto,top,0);
+    &:focus{outline: 0;}
+}
+.slick-prev{
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); 
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to right,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#00000000',GradientType=1 );
+
+    &::after{
+        margin-top: -12px;
+        @include sudo(45px,25px,left,20px,top,50%, false);
+        background:url(../images/prev.png) no-repeat;
+    }
+}
+.slick-next{
+    right: 0;
+    background: -moz-linear-gradient(right,  rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(right,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to left,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#00000000',GradientType=1 );
+
+    &::after{
+        margin-top: -12px;
+        @include sudo(45px,25px,right,20px,top,50%, false);
+        background:url(../images/next.png) no-repeat;
+    }
+}
+
+.menu-social{
+    @include absolute(125px, 530px,left,50%,top,0);
+    transform: translateX(-50%);
+    border-left: 1px solid lighten(map-get($colors, text-color), 30%);
+    border-right: 1px solid lighten(map-get($colors, text-color), 30%);
+    .site-social{
+        width: 50px;
+        margin: 0 auto;
+        padding: 190px 0 65px;
+        a{
+            margin: 6px 0;
+            color: #707070;
+            @include font(false,22px, 30px,false);
+            display: block;
+            &:hover{color: map-get($colors, brand);}
+        }
+    }
+    span{
+        @include font(false,20px, 24px,false);
+        transform: rotate(-90deg);
+    }
+}

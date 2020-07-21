@@ -1,0 +1,11 @@
+@font-face {
+    font-family:'muli-semi-bold';
+    src: url('muli-semi-bold/muli-semi-bold.eot');
+    src: url('muli-semi-bold/muli-semi-bold.eot?#iefix') format('embedded-opentype'),
+        url('muli-semi-bold/muli-semi-bold.woff2') format('woff2'),
+        url('muli-semi-bold/muli-semi-bold.woff') format('woff'),
+        url('muli-semi-bold/muli-semi-bold.ttf') format('truetype'),
+        url('muli-semi-bold/muli-semi-bold.svg#muli-semi-bold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
