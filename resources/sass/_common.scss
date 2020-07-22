@@ -26,8 +26,12 @@ ul{list-style: none; padding: 0; margin: 0;}
 }
 .site-social a{
 	margin: 0 5px;
-	color: #d7d7d7;
-	font-size: 25px;
+	color: lighten(map-get($colors, text-color),40);
+	@include font(false, 25px, 25px, false);
+
+	&:hover{
+		color: map-get($colors, brand);
+	}
 }
 
 /*-----------------------------*/

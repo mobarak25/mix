@@ -11,10 +11,19 @@
 }
 .publication-img{
     @include border-radius(15px);
-    @include box-shadow(0, 6px, 6px, 1px, map-get($colors, shadow-color));
+    @include box-shadow(0, 4px, 9px, 1px, map-get($colors, shadow-color));
     img{
         width: 100%;
         @include border-radius(15px);
+    }
+}
+.publication-date{
+    background-color: map-get($colors, brand);
+    @include absolute(125px, 112px, right, 133px, top,0);
+    span{
+        text-align: center;
+        display: block;
+        @include font(white-color, 30px, 36px, bold);
     }
 }
 .publication-content{
@@ -38,4 +47,77 @@
 }
 .publication-btn{
     padding:32px 0 0;
+}
+.Pagination-wrapper{
+    padding: 20px 0 80px;
+}
+.paginationIn{
+    padding-right: 140px;
+    a{
+        width: 36px;
+        height: 36px;
+        margin: 0 6px;
+        display: flex;
+        @include border-radius(50%);
+        @include transition(all, 400ms);
+        @include font(text-color, 17px, 17px, false);
+        border: 1px solid lighten(map-get($colors, text-color), 40);
+
+        &.active,
+        &:hover{
+            font-weight: 700;
+            color: map-get($colors, white-color);
+            background-color: map-get($colors, brand);
+            border: 1px solid map-get($colors, brand);
+        }
+    }
+    span{margin: auto;}
+    i{margin: auto; font-size: 22px;}
+}
+
+
+.publication-widget{
+    
+    padding: 15px 30px;
+    margin-bottom: 35px;
+    @include site-shadow();
+
+    h2{
+        position: relative;
+        @include font(title-color, 28px, 50px, bold);
+        &:before{
+            @include sudo(60px,3px, left,0, bottom,0, false);
+            background-color: lighten(map-get($colors, text-color), 33);
+        }
+    }
+
+    ul{
+        padding-top: 22px;
+        li{
+            padding: 9px 0 9px 22px;
+            position: relative;
+            border-bottom: 1px solid #ececec;
+            a{
+                display: block;
+                @include font(text-color, 20px, 28px, false);
+                i{
+                    @include absolute(false, false, left,0, top,11px)
+                }
+                &:hover{
+                    color: map-get($colors, brand);
+                }
+            }
+            span{
+                padding-top: 3px;
+                display: block;
+
+                @include font(false, 14px, 28px, medium);
+                color: lighten(map-get($colors, text-color), 33);
+            }
+            &:last-child{ border: 0;}
+        }
+    }
+    &.archive ul li a{
+         @include font(false, 17px, 28px, medium);
+    }
 }
