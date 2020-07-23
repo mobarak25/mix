@@ -42,11 +42,12 @@
         @include font(title-color, 30px, 50px, bold);
     }
     p{
+        padding-bottom: 27px;
         @include font(false, 17px, 28px, false);
     }
 }
 .publication-btn{
-    padding:32px 0 0;
+    padding:10px 0 0;
 }
 .Pagination-wrapper{
     padding: 20px 0 80px;
@@ -120,4 +121,79 @@
     &.archive ul li a{
          @include font(false, 17px, 28px, medium);
     }
+}
+
+.publication-btm{
+    padding: 13px 0;
+    border-top: 1px solid lighten(map-get($colors, text-color), 44);
+    border-bottom: 1px solid lighten(map-get($colors, text-color), 44);
+    h5{
+        font-size: 17px;
+        line-height: 22px;
+    }
+}
+.comments{
+    padding: 45px 0 0;
+    h3{
+        padding: 0;
+        @include font(title-color, 30px, 45px, bold);
+    }
+    ul{
+        
+        li{
+           padding: 45px 0; 
+            border-bottom: 1px solid lighten(map-get($colors, text-color), 44);
+        }
+    }
+    .replay-wrap{
+        padding-top: 44px;
+        padding-left:54px;
+    }
+    .comments-img{
+        width: 122px;
+        height: 122px;
+        overflow: hidden;
+        @include border-radius(50%);
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .comments-content{
+        width: calc(100% - 122px);
+        padding-left:44px;
+        p{
+            padding: 0;
+            @include font(text-color, 17px, 28px, false);
+
+        }
+        .replay-btn{
+            margin-top: 15px;
+            display: inline-block;
+            @include font(text-color, 17px, 22px, semi-bold);
+
+            &:hover{
+                text-decoration: underline;
+                color: map-get($colors, brand);
+            }
+        }
+    }
+}
+.icons{
+    padding-top: 15px;
+    a{
+        padding: 0 14px;
+        font-size: 20px;
+        color: lighten(map-get($colors, text-color), 30);
+        border-left:1px solid lighten(map-get($colors, text-color), 30);
+        &:first-child{
+            padding-left: 0;
+            border: 0;
+        }
+    }
+    
+}
+
+.comments-btn{
+    padding-top: 50px;
 }

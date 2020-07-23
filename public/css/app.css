@@ -1421,12 +1421,13 @@ ul {
   font-weight: 700;
 }
 .publication-content p {
+  padding-bottom: 27px;
   font-size: 17px;
   line-height: 28px;
 }
 
 .publication-btn {
-  padding: 32px 0 0;
+  padding: 10px 0 0;
 }
 
 .Pagination-wrapper {
@@ -1529,6 +1530,87 @@ ul {
   font-size: 17px;
   line-height: 28px;
   font-weight: 500;
+}
+
+.publication-btm {
+  padding: 13px 0;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+.publication-btm h5 {
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.comments {
+  padding: 45px 0 0;
+}
+.comments h3 {
+  padding: 0;
+  color: #3f3f3f;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+}
+.comments ul li {
+  padding: 45px 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+.comments .replay-wrap {
+  padding-top: 44px;
+  padding-left: 54px;
+}
+.comments .comments-img {
+  width: 122px;
+  height: 122px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+.comments .comments-img img {
+  width: 100%;
+  height: 100%;
+}
+.comments .comments-content {
+  width: calc(100% - 122px);
+  padding-left: 44px;
+}
+.comments .comments-content p {
+  padding: 0;
+  color: #717171;
+  font-size: 17px;
+  line-height: 28px;
+}
+.comments .comments-content .replay-btn {
+  margin-top: 15px;
+  display: inline-block;
+  color: #717171;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.comments .comments-content .replay-btn:hover {
+  text-decoration: underline;
+  color: #eca633;
+}
+
+.icons {
+  padding-top: 15px;
+}
+.icons a {
+  padding: 0 14px;
+  font-size: 20px;
+  color: #bebebe;
+  border-left: 1px solid #bebebe;
+}
+.icons a:first-child {
+  padding-left: 0;
+  border: 0;
+}
+
+.comments-btn {
+  padding-top: 50px;
 }
 
 @media (min-width: 1400px) {
