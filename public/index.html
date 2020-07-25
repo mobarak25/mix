@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +21,9 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
-    
+
 </head>
+
 <body>
     <div id="app">
         <site-header></site-header>
@@ -32,16 +34,27 @@
 
         <!--Start Modal -->
         <slider-modal></slider-modal>
-        
+
     </div>
     <script src="js/app.js"></script>
-    
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/pagepiling.min.js"></script>
     <script type="text/javascript" src="js/js.js"></script>
     <script>
+
+
+        $('#pagepiling').pagepiling({
+            navigation: false,
+        });
+
+        $('.scroll-down').click(function () {
+            $.fn.pagepiling.moveSectionDown();
+        });
+
+
         function range(end, gap) {
             var ans = [];
             for (let i = 0; i <= end; i += gap) {
@@ -68,4 +81,5 @@ stroke="#f8f8f8" stroke-width="`+ strokWidthWhite + `" stroke-dasharray="100" st
         document.getElementById('box').innerHTML = string;
     </script>
 </body>
+
 </html>

@@ -29,7 +29,7 @@
 
         <site-menu></site-menu>
 
-        <!--Start Banndr Section-->
+        <!--==============================Start Banndr Section=======================-->
         <section class="inner-banner">
             <img src="images/banner-publication.jpg" alt="Career Banner">
             <div class="banner-container w-100 h-100">
@@ -38,8 +38,10 @@
                 </div>
             </div>
         </section>
+        <!--==============================End Start Banndr Section===================-->
 
-        <!--Start Search Section-->
+
+        <!--================================Start publication Section==================-->
         <section class="publication-wrapper">
             <div class="container publication-container">
                 <div class="d-flex flex-wrap justify-content-between">
@@ -157,11 +159,21 @@
 
                                         </li>
                                     </ul>
-                                    <div class="comments-btn">
-                                        <a class="site-btn w-100 text-center js-comment" href="#">Write a Comment</a>
+                                    <div class="comments-btn dropdown">
+                                        <a class="site-btn w-100 text-center" href="#" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">Write a Comment</a>
 
-                                        <form action="#" method="POST">
-                                            <textarea></textarea>
+                                        <form action="#" method="POST" class="dropdown-menu w-100 p-4 mb-4"
+                                            aria-labelledby="dropdownMenuButton">
+                                            <div class="form-group w-100 border-0">
+                                                <label>Write Your Comments</label>
+                                                <textarea class=" form-control" placeholder="Your Comments Here"
+                                                    row="3"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="site-btn text-center" type="submit" href="#">Submit
+                                                    Comment</button>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
@@ -211,12 +223,17 @@
                 </div>
             </div>
         </section>
+        <!--==============================End publication Section=====================-->
 
-        <!--Start footer-->
+
+        <!--================================Start Footer Section=======================-->
         <site-footer></site-footer>
+        <!--================================End Footer Section=========================-->
 
-        <!--Start Modal -->
+
+        <!--================================Start Modal Section========================-->
         <slider-modal></slider-modal>
+        <!--================================End Modal Section==========================-->
     </div>
 
 
@@ -225,6 +242,7 @@
     <script src="js/app.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/js.js"></script>
 </body>

@@ -45,13 +45,7 @@ jQuery(document).ready(function ($) {
     ]
   });
 
-  $('#pagepiling').pagepiling({
-    navigation: false,
-  });
 
-  $('.scroll-down').click(function () {
-    $.fn.pagepiling.moveSectionDown();
-  });
 
 
 

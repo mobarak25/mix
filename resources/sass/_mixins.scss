@@ -68,6 +68,7 @@
 	background-color: map-get($colors, brand);
 	border-radius: 30px;
 	transition: $transition;
+	border: 1px solid map-get($colors, brand);
 	&.with-arrow{
 		padding:16px 76px 12px 30px;
 		&:after{
@@ -81,6 +82,9 @@
 	&:hover{
 		color: map-get($colors, white-color);;
 		background-color: #d6961d;
+	}
+	&:focus{
+		outline: 0;
 	}
 }
 
