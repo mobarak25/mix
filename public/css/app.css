@@ -1177,13 +1177,150 @@ ul {
 
 .career-details-btm {
   padding: 11px 89px 11px 140px;
-  border-top: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
+  border-top: 1px solid #bebebe;
+  border-bottom: 1px solid #bebebe;
 }
 .career-details-btm span {
   font-size: 17px;
   line-height: 28px;
   font-weight: 600;
+}
+
+.modal-form-wrap {
+  padding: 80px 130px 140px;
+  background: url(../images/form-bg.png) no-repeat right top;
+}
+
+.apply-form-top {
+  padding-bottom: 50px;
+}
+.apply-form-top h4 {
+  padding: 73px 0 0;
+  color: #717171;
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 700;
+}
+.apply-form-top h2 {
+  padding: 0;
+  color: #3f3f3f;
+  font-size: 65px;
+  line-height: 96px;
+  font-weight: 700;
+}
+
+.form-bottom {
+  padding: 0;
+}
+.form-bottom .form-group {
+  margin-bottom: 45px;
+}
+.form-bottom .form-group em {
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 15;
+  bottom: 0;
+  background-color: #eca633;
+  transition: all 300ms linear;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+}
+.form-bottom .form-control {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  color: #717171;
+  font-size: 17px;
+  line-height: 34px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-bottom: 1px solid #bebebe;
+  border-radius: 0;
+}
+.form-bottom .form-control:focus {
+  box-shadow: none;
+}
+.form-bottom .form-control:focus + em {
+  width: calc(100% - 30px);
+}
+.form-bottom textarea.form-control {
+  height: 110px;
+}
+
+.file {
+  position: relative;
+}
+.file input {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.file input + .file-info {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  background-color: #fffefc;
+  border: 1px dashed #bebebe;
+}
+.file input + .file-info i {
+  color: #eca633;
+  font-size: 30px;
+  line-height: 30px;
+}
+.file input + .file-info span {
+  color: #3f3f3f;
+  font-size: 21px;
+  line-height: 26px;
+}
+.file input + .file-info small {
+  color: #717171;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.submit {
+  height: 60px;
+  padding: 17px 60px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  background-color: #eca633;
+  border-radius: 30px;
+  transition: all 400ms;
+  border: 1px solid #eca633;
+}
+.submit.with-arrow {
+  padding: 16px 76px 12px 30px;
+}
+.submit.with-arrow:after {
+  content: "";
+  width: 29px;
+  height: 19px;
+  position: absolute;
+  right: 30px;
+  top: 22px;
+  background: url(../images/long-right-arrow.png) no-repeat;
+}
+.submit:hover {
+  color: #fff;
+  background-color: #d6961d;
+}
+.submit:focus {
+  outline: 0;
 }
 
 .companies {
@@ -1621,6 +1758,73 @@ ul {
   padding-top: 50px;
 }
 
+textarea.comment-filed {
+  height: 150px;
+}
+
+.post-pagination {
+  padding: 28px 0;
+  margin-top: 80px;
+  border-top: 1px solid #bebebe;
+  border-bottom: 1px solid #bebebe;
+}
+.post-pagination .post-pagination-box {
+  padding: 0 60px;
+  width: 50%;
+}
+.post-pagination .post-pagination-box span {
+  padding-bottom: 12px;
+  display: block;
+  color: #3f3f3f;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.post-pagination .post-pagination-box p {
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #717171;
+  font-size: 25px;
+  line-height: 34px;
+}
+.post-pagination .post-pagination-box i {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  color: #717171;
+  font-size: 18px;
+  line-height: 18px;
+}
+.post-pagination .post-pagination-box:last-child span {
+  text-align: right;
+}
+.post-pagination .post-pagination-box:last-child i {
+  left: auto;
+  right: 0;
+}
+.post-pagination .post-pagination-box:last-child::before {
+  content: "";
+  width: 3px;
+  height: 26px;
+  position: absolute;
+  left: -1px;
+  bottom: 3px;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  background-color: #717171;
+  background-color: #bbbaba;
+}
+.post-pagination .post-pagination-box a {
+  display: block;
+}
+.post-pagination .post-pagination-box a:hover p {
+  color: #eca633;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1280px;
@@ -1628,6 +1832,10 @@ ul {
 
   .companies-modal {
     max-width: 88vw;
+  }
+
+  .form-modal {
+    max-width: 65vw;
   }
 
   .publication-container {

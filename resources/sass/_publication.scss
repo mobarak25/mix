@@ -197,3 +197,50 @@
 .comments-btn{
     padding-top: 50px;
 }
+textarea.comment-filed{
+    height: 150px;
+}
+.post-pagination{
+    padding: 28px 0;
+    margin-top: 80px;
+    border-top:1px solid lighten(map-get($colors, text-color), 30);
+    border-bottom:1px solid lighten(map-get($colors, text-color), 30);
+
+    .post-pagination-box{
+        padding: 0 60px;
+        width: 50%;
+        span{
+            padding-bottom: 12px;
+            display: block;
+            @include font(title-color, 17px, 20px, bold);
+        }
+        p{
+            padding: 0;
+            width: 100%; overflow: hidden; white-space: nowrap;
+            text-overflow: ellipsis;
+            @include font(text-color, 25px, 34px, false);
+        }
+        i{
+            @include absolute(false, false, left,0, top,20px); 
+            @include font(text-color, 18px, 18px, false);
+        }
+        &:last-child{
+            span{
+                text-align: right;
+            }
+            i{
+                left: auto;
+                right: 0;
+            }
+            &::before{
+                @include sudo(3px, 26px,left,-1px,bottom,3px,text-color);
+                background-color: #bbbaba;
+            }
+        }
+        a{display: block;
+            &:hover p{
+                color: map-get($colors, brand);
+            }
+        }
+    }
+}

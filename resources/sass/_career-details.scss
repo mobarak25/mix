@@ -73,10 +73,66 @@
 }
 .career-details-btm{
 	padding: 11px 89px 11px 140px;
-	border-top: 1px solid #ececec;
-	border-bottom: 1px solid #ececec;
+	border-top:1px solid lighten(map-get($colors, text-color), 30);
+	border-bottom:1px solid lighten(map-get($colors, text-color), 30);
 
 	span{
 		@include font(false, 17px, 28px, semi-bold);
 	}
+}
+
+.modal-form-wrap{
+	padding: 80px 130px 140px;
+	background: url(../images/form-bg.png) no-repeat right top;
+}
+.apply-form-top{
+	padding-bottom: 50px;
+	h4{
+		padding: 73px 0 0;
+		@include font(text-color, 35px, 50px, bold);
+	}
+	h2{
+		padding:0;
+		@include font(title-color, 65px, 96px, bold);
+	}
+}
+.form-bottom{
+	padding: 0;
+	.form-group{
+		margin-bottom: 45px;
+		em{
+			width:0;
+			@include absolute(false, 2px, left,15, bottom,0);
+			background-color:map-get($colors, brand);
+			@include transition(all, 300ms);
+		}
+	}
+	.form-control {
+		width: 100%;
+		height: auto;
+		padding:0;
+		@include font(text-color, 17px, 34px, false);
+		background-color: #fff;
+		background-clip: padding-box;
+		border: 0;
+		border-bottom:1px solid lighten(map-get($colors, text-color), 30);
+		border-radius:0;
+		
+		&:focus{
+			box-shadow: none;
+		}
+		&:focus + em{
+			width:calc(100% - 30px);
+		}
+	}
+	textarea.form-control {
+		height: 110px;
+	}
+}
+
+.file{
+	@include file();
+}
+.submit{
+	@include button-base(17px 60px);
 }

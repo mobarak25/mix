@@ -77,7 +77,6 @@
 			background: url(../images/long-right-arrow.png) no-repeat;
 		}
 	}
-	
 
 	&:hover{
 		color: map-get($colors, white-color);;
@@ -85,6 +84,30 @@
 	}
 	&:focus{
 		outline: 0;
+	}
+}
+@mixin file(){
+	position: relative;
+	input{
+		cursor: pointer;
+		@include absolute(100%,100%, left,0,top,0);
+		opacity: 0;
+		
+		& + .file-info{
+			width: 100%;
+			height: 70px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@include border-radius(4px);
+			background-color: lighten(map-get($colors, brand), 43);
+			border:1px dashed lighten(map-get($colors, text-color), 30);
+
+			i{@include font(brand, 30px, 30px, false);}
+			span{@include font(title-color, 21px, 26px, false);}
+			small{@include font(text-color, 17px, 26px, false);}
+		}
+
 	}
 }
 

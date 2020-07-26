@@ -75,7 +75,7 @@ export default {
                             title: "Monica Ceramics",
                             desc:
                                 "The VENUS range of exquisite tiles hail aristocracy, quality and innovation. Venus is a world class ceramics tiles, upholding porcelain philosophy and state-of-the-art research & design facilities.",
-                            link: "www.x-ceramix.com"
+                            link: "www.x-ceramix.com",
                         },
                         {
                             id: "2",
@@ -83,7 +83,7 @@ export default {
                             title: "Monalisa Ceramics",
                             desc:
                                 "X Monica is one of the premium tile brand in Bangladesh. The brand is known as a trend setter within the tile industry of BD. Since the inception in the year 2009, our motto of success has been continuous ‘Innovation, Product Quality and Service’.",
-                            link: "www.x-ceramix.com"
+                            link: "www.x-ceramix.com",
                         },
                         {
                             id: "3",
@@ -91,7 +91,7 @@ export default {
                             title: "Alexander Ceramics",
                             desc:
                                 "Alexander, the name which inspires through it’s style and elegance. Its a special brand of “X Ceramics”, which is part of the “X Index” Companies, a well known conglomerate of Bangladesh with high repute, existing from the year 1977.",
-                            link: "www.x-ceramix.com"
+                            link: "www.x-ceramix.com",
                         },
                         {
                             id: "4",
@@ -99,7 +99,7 @@ export default {
                             title: "Venus Ceramics",
                             desc:
                                 "X Monica is one of the premium tile brand in Bangladesh. The brand is known as a trend setter within the tile industry of BD. Since the inception in the year 2009, our motto of success has been continuous ‘Innovation, Product Quality and Service’.",
-                            link: "www.x-ceramix.com"
+                            link: "www.x-ceramix.com",
                         },
                         {
                             id: "5",
@@ -107,12 +107,12 @@ export default {
                             title: "Stone Shield",
                             desc:
                                 "Nunc ut libero vitae sapien feugiat congue quis ut nunc. Curabitur blandit efficitur mauris eu tempus. Duis metus nisl, dictum quis tellus sit amet, sollicitudin bibendum metus.Duis metus nisl, dictum quis tellus sit amet, sollicitudin bibendum metus.",
-                            link: "www.x-ceramix.com"
-                        }
-                    ]
-                }
-            ]
+                            link: "www.x-ceramix.com",
+                        },
+                    ],
+                },
+            ],
         };
-    }
+    },
 };
 </script>
