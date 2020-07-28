@@ -46,7 +46,16 @@ ul {
   background-color: #eca633;
   border-radius: 30px;
   transition: all 400ms;
-  border: 1px solid #eca633;
+}
+.site-btn.no-bg {
+  background-color: transparent;
+  border: 0;
+  color: #eca633;
+}
+.site-btn.no-bg:hover {
+  text-decoration: underline;
+  color: #eca633;
+  background-color: #fff;
 }
 .site-btn.with-arrow {
   padding: 16px 76px 12px 30px;
@@ -59,6 +68,15 @@ ul {
   right: 30px;
   top: 22px;
   background: url(../images/long-right-arrow.png) no-repeat;
+}
+.site-btn.with-arrow.no-bg:after {
+  content: "";
+  width: 35px;
+  height: 19px;
+  position: absolute;
+  right: 30px;
+  top: 22px;
+  background: url(../images/long-down-arrow.png) no-repeat;
 }
 .site-btn:hover {
   color: #fff;
@@ -815,7 +833,16 @@ ul {
   background-color: #eca633;
   border-radius: 30px;
   transition: all 400ms;
-  border: 1px solid #eca633;
+}
+.home-btn .site-btn.no-bg {
+  background-color: transparent;
+  border: 0;
+  color: #eca633;
+}
+.home-btn .site-btn.no-bg:hover {
+  text-decoration: underline;
+  color: #eca633;
+  background-color: #fff;
 }
 .home-btn .site-btn.with-arrow {
   padding: 16px 76px 12px 30px;
@@ -828,6 +855,15 @@ ul {
   right: 30px;
   top: 22px;
   background: url(../images/long-right-arrow.png) no-repeat;
+}
+.home-btn .site-btn.with-arrow.no-bg:after {
+  content: "";
+  width: 35px;
+  height: 19px;
+  position: absolute;
+  right: 30px;
+  top: 22px;
+  background: url(../images/long-down-arrow.png) no-repeat;
 }
 .home-btn .site-btn:hover {
   color: #fff;
@@ -896,6 +932,48 @@ ul {
 }
 .scroll-down:hover i {
   left: 90px;
+}
+
+/*-----------------------------*/
+/*---------index bottom--------*/
+/*-----------------------------*/
+.company-summery-wrapper {
+  width: 610px;
+  padding: 0;
+  margin: 0;
+}
+.company-summery-wrapper h5 {
+  padding: 0 0 28px;
+  color: #eca633;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+}
+.company-summery-wrapper h5 {
+  padding: 0 0 28px;
+  color: #eca633;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.company-summery {
+  padding: 52px 0 0;
+}
+.company-summery p {
+  padding-bottom: 32px;
+  color: #717171;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.company-indicator {
+  background-color: #eca633;
+  width: 200px;
+  height: 2px;
+  position: absolute;
+  left: -100%;
+  right: 10px;
 }
 
 /*-----------------------------*/
@@ -1289,7 +1367,7 @@ ul {
   line-height: 26px;
 }
 
-.submit {
+.modal-bottom .submit {
   height: 60px;
   padding: 17px 60px;
   color: #fff;
@@ -1301,12 +1379,21 @@ ul {
   background-color: #eca633;
   border-radius: 30px;
   transition: all 400ms;
-  border: 1px solid #eca633;
 }
-.submit.with-arrow {
+.modal-bottom .submit.no-bg {
+  background-color: transparent;
+  border: 0;
+  color: #eca633;
+}
+.modal-bottom .submit.no-bg:hover {
+  text-decoration: underline;
+  color: #eca633;
+  background-color: #fff;
+}
+.modal-bottom .submit.with-arrow {
   padding: 16px 76px 12px 30px;
 }
-.submit.with-arrow:after {
+.modal-bottom .submit.with-arrow:after {
   content: "";
   width: 29px;
   height: 19px;
@@ -1315,12 +1402,39 @@ ul {
   top: 22px;
   background: url(../images/long-right-arrow.png) no-repeat;
 }
-.submit:hover {
+.modal-bottom .submit.with-arrow.no-bg:after {
+  content: "";
+  width: 35px;
+  height: 19px;
+  position: absolute;
+  right: 30px;
+  top: 22px;
+  background: url(../images/long-down-arrow.png) no-repeat;
+}
+.modal-bottom .submit:hover {
   color: #fff;
   background-color: #d6961d;
 }
-.submit:focus {
+.modal-bottom .submit:focus {
   outline: 0;
+}
+.modal-bottom a {
+  position: relative;
+  text-decoration: underline;
+  color: #262626;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.modal-bottom a i {
+  font-size: 26px;
+  position: absolute;
+  left: -30px;
+  top: 9px;
+}
+.modal-bottom a:hover {
+  text-decoration: none;
+  color: #eca633;
 }
 
 .companies {

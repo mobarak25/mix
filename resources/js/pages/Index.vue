@@ -4,11 +4,18 @@
         <div class="section home" id="section1">
             <div class="home-block d-flex justify-content-between align-items-center">
                 <div class="home-left">
-                    <h2>Leadership<br>Through <br>Experience</h2>
-                    <p>with a heritage spanning over four decades, XIC established itself as a dynamic and progressive
-                        entity in the rapidly growing econo- my of Bangladesh.</p>
+                    <h2>
+                        Leadership
+                        <br />Through
+                        <br />Experience
+                    </h2>
+                    <p>
+                        with a heritage spanning over four decades, XIC established itself as a dynamic and progressive
+                        entity in the rapidly growing econo- my of Bangladesh.
+                    </p>
                     <div class="home-btn">
-                        <a class="site-btn" href="">Read More
+                        <a class="site-btn" href>
+                            Read More
                             <i class="long-arrow-right"></i>
                         </a>
                     </div>
@@ -24,12 +31,10 @@
                         </div>
                     </span>
                     <div class="chartIn">
-                        <svg viewBox="0 0 42 42" id="box" class="donut"></svg>
+                        <svg viewBox="0 0 42 42" id="box" class="donut" />
                     </div>
-
                 </div>
             </div>
-
 
             <footer class="home-footer">
                 <div class="home-block">
@@ -63,7 +68,6 @@
                                 <span class="bullet d-flex align-items-center">
                                     <a href="#"></a>
                                 </span>
-
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -77,30 +81,125 @@
 
             <div class="index-right">
                 <div class="index-social">
-                    <a href="#"><i class="icofont-facebook"></i></a>
-                    <a href="#"><i class="icofont-youtube"></i></a>
-                    <a href="#"><i class="icofont-twitter"></i></a>
+                    <a href="#">
+                        <i class="icofont-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="icofont-youtube"></i>
+                    </a>
+                    <a href="#">
+                        <i class="icofont-twitter"></i>
+                    </a>
                 </div>
-                <a class="scroll-down" href="#">Scroll Down <i></i></a>
+                <a class="scroll-down" href="#">
+                    Scroll Down
+                    <i></i>
+                </a>
             </div>
         </div>
 
         <!-- Start Inner page -->
         <div class="section" id="section2">
-            sdfsdf
-        </div>
+            <div class="home-block d-flex flex-wrap justify-content-between align-items-center">
+                <div class="chart">
+                    <span class="company-indicator"></span>
+                    <span class="chart-bg">&nbsp;</span>
+                    <span class="chart-first-line">&nbsp;</span>
+                    <span class="chart-second-line">&nbsp;</span>
+                    <span class="circle-shadow">
+                        <div class="established">
+                            <small>Established</small>
+                            <strong>1977</strong>
+                        </div>
+                    </span>
+                    <div class="chartIn">
+                        <svg viewBox="0 0 42 42" id="box" class="donut" />
+                    </div>
+                </div>
 
+                <div class="company-summery-wrapper">
+                    <h5>Established in 2008</h5>
+                    <a href="#">
+                        <img class="img-fluid" src="images/company-logo-1.png" alt="Company logo" />
+                    </a>
+                    <div class="company-summery">
+                        <p>The Ceramics industry is a growing manufacturing sector in Bangladesh. The industry started during the late 1950s when the first ceramic industrial plants were established.</p>
+
+                        <p>Past 2 decades of economic growth in the country, resulted in growing demand for housing and infrastructures. Index seized the opportunity and expanded its wing to the Ceramics Tiles sector and incorporated it in 2008</p>
+
+                        <a class="site-btn no-bg with-arrow" href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="home-footer">
+                <div class="home-block">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <span class="bullet d-flex align-items-center">
+                                    <a href="#"></a>
+                                    <i></i>
+                                </span>
+                                <span class="bullet d-flex align-items-center">
+                                    <a href="#"></a>
+                                    <i></i>
+                                </span>
+                                <span class="bullet d-flex align-items-center">
+                                    <a href="#"></a>
+                                    <i></i>
+                                </span>
+                                <span class="bullet d-flex align-items-center">
+                                    <a href="#"></a>
+                                    <i></i>
+                                </span>
+                                <span class="bullet d-flex align-items-center">
+                                    <a href="#"></a>
+                                    <i></i>
+                                </span>
+                                <span class="bullet d-flex align-items-center">
+                                    <a href="#"></a>
+                                    <i></i>
+                                </span>
+                                <span class="bullet d-flex align-items-center">
+                                    <a href="#"></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="text-lg-right home-ftr-right">
+                                <span>43 years manufacturing industrial equipment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="index-right">
+                <div class="index-social">
+                    <a href="#">
+                        <i class="icofont-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="icofont-youtube"></i>
+                    </a>
+                    <a href="#">
+                        <i class="icofont-twitter"></i>
+                    </a>
+                </div>
+                <a class="scroll-down" href="#">
+                    Scroll Down
+                    <i></i>
+                </a>
+            </div>
+        </div>
     </div>
-  
 </template>
 
 <script>
 export default {
-  name: "Footer",
-  data: function() {
-    return {
-     
-    };
-  } 
+    data: function () {
+        return {};
+    },
 };
 </script>

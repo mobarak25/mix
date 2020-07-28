@@ -548,8 +548,109 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Footer",
   data: function data() {
     return {};
   }
@@ -1544,7 +1645,39 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "section", attrs: { id: "section2" } }, [
-      _vm._v("\n        sdfsdf\n    ")
+      _c(
+        "div",
+        {
+          staticClass:
+            "home-block d-flex flex-wrap justify-content-between align-items-center"
+        },
+        [
+          _c("div", { staticClass: "chart" }, [
+            _c("span", { staticClass: "company-indicator" }),
+            _vm._v(" "),
+            _c("span", { staticClass: "chart-bg" }, [_vm._v(" ")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "chart-first-line" }, [_vm._v(" ")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "chart-second-line" }, [_vm._v(" ")]),
+            _vm._v(" "),
+            _vm._m(4),
+            _vm._v(" "),
+            _c("div", { staticClass: "chartIn" }, [
+              _c("svg", {
+                staticClass: "donut",
+                attrs: { viewBox: "0 0 42 42", id: "box" }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(5)
+        ]
+      ),
+      _vm._v(" "),
+      _vm._m(6),
+      _vm._v(" "),
+      _vm._m(7)
     ])
   ])
 }
@@ -1555,22 +1688,24 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "home-left" }, [
       _c("h2", [
-        _vm._v("Leadership"),
+        _vm._v("\n                    Leadership\n                    "),
         _c("br"),
-        _vm._v("Through "),
+        _vm._v("Through\n                    "),
         _c("br"),
-        _vm._v("Experience")
+        _vm._v("Experience\n                ")
       ]),
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "with a heritage spanning over four decades, XIC established itself as a dynamic and progressive\n                    entity in the rapidly growing econo- my of Bangladesh."
+          "\n                    with a heritage spanning over four decades, XIC established itself as a dynamic and progressive\n                    entity in the rapidly growing econo- my of Bangladesh.\n                "
         )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "home-btn" }, [
         _c("a", { staticClass: "site-btn", attrs: { href: "" } }, [
-          _vm._v("Read More\n                        "),
+          _vm._v(
+            "\n                        Read More\n                        "
+          ),
           _c("i", { staticClass: "long-arrow-right" })
         ])
       ])
@@ -1670,7 +1805,141 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("a", { staticClass: "scroll-down", attrs: { href: "#" } }, [
-        _vm._v("Scroll Down "),
+        _vm._v("\n                Scroll Down\n                "),
+        _c("i")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", { staticClass: "circle-shadow" }, [
+      _c("div", { staticClass: "established" }, [
+        _c("small", [_vm._v("Established")]),
+        _vm._v(" "),
+        _c("strong", [_vm._v("1977")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "company-summery-wrapper" }, [
+      _c("h5", [_vm._v("Established in 2008")]),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "#" } }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: "images/company-logo-1.png", alt: "Company logo" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "company-summery" }, [
+        _c("p", [
+          _vm._v(
+            "The Ceramics industry is a growing manufacturing sector in Bangladesh. The industry started during the late 1950s when the first ceramic industrial plants were established."
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Past 2 decades of economic growth in the country, resulted in growing demand for housing and infrastructures. Index seized the opportunity and expanded its wing to the Ceramics Tiles sector and incorporated it in 2008"
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "a",
+          { staticClass: "site-btn no-bg with-arrow", attrs: { href: "#" } },
+          [_vm._v("View Details")]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("footer", { staticClass: "home-footer" }, [
+      _c("div", { staticClass: "home-block" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-6" }, [
+            _c("div", { staticClass: "d-flex align-items-center" }, [
+              _c("span", { staticClass: "bullet d-flex align-items-center" }, [
+                _c("a", { attrs: { href: "#" } }),
+                _vm._v(" "),
+                _c("i")
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "bullet d-flex align-items-center" }, [
+                _c("a", { attrs: { href: "#" } }),
+                _vm._v(" "),
+                _c("i")
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "bullet d-flex align-items-center" }, [
+                _c("a", { attrs: { href: "#" } }),
+                _vm._v(" "),
+                _c("i")
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "bullet d-flex align-items-center" }, [
+                _c("a", { attrs: { href: "#" } }),
+                _vm._v(" "),
+                _c("i")
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "bullet d-flex align-items-center" }, [
+                _c("a", { attrs: { href: "#" } }),
+                _vm._v(" "),
+                _c("i")
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "bullet d-flex align-items-center" }, [
+                _c("a", { attrs: { href: "#" } }),
+                _vm._v(" "),
+                _c("i")
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "bullet d-flex align-items-center" }, [
+                _c("a", { attrs: { href: "#" } })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-6" }, [
+            _c("div", { staticClass: "text-lg-right home-ftr-right" }, [
+              _c("span", [
+                _vm._v("43 years manufacturing industrial equipment")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "index-right" }, [
+      _c("div", { staticClass: "index-social" }, [
+        _c("a", { attrs: { href: "#" } }, [
+          _c("i", { staticClass: "icofont-facebook" })
+        ]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [
+          _c("i", { staticClass: "icofont-youtube" })
+        ]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [
+          _c("i", { staticClass: "icofont-twitter" })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("a", { staticClass: "scroll-down", attrs: { href: "#" } }, [
+        _vm._v("\n                Scroll Down\n                "),
         _c("i")
       ])
     ])

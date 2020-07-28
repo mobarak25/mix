@@ -68,7 +68,16 @@
 	background-color: map-get($colors, brand);
 	border-radius: 30px;
 	transition: $transition;
-	border: 1px solid map-get($colors, brand);
+	&.no-bg{
+		background-color: transparent;
+		border: 0;
+		color: map-get($colors, brand);
+		&:hover{
+			text-decoration: underline;
+			color: map-get($colors, brand);
+			background-color: map-get($colors, white-color);
+		}
+	}
 	&.with-arrow{
 		padding:16px 76px 12px 30px;
 		&:after{
@@ -76,6 +85,12 @@
 			@include absolute(29px, 19px, right, 30px, top, 22px);
 			background: url(../images/long-right-arrow.png) no-repeat;
 		}
+		&.no-bg:after{
+			content: '';
+			@include absolute(35px, 19px, right, 30px, top, 22px);
+			background: url(../images/long-down-arrow.png) no-repeat;
+		}
+
 	}
 
 	&:hover{

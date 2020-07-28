@@ -133,6 +133,23 @@
 .file{
 	@include file();
 }
-.submit{
-	@include button-base(17px 60px);
+
+.modal-bottom{
+	.submit{
+		@include button-base(17px 60px);
+	}
+	a{
+		position: relative;
+		text-decoration: underline;
+		color: darken(map-get($colors, title-color), 10);
+		@include font(false, 16px, 40px, bold);
+		i{
+			font-size: 26px;
+			@include absolute(false,false,left,-30px,top,9px);
+		}
+		&:hover{
+			text-decoration: none;
+			color: map-get($colors, brand)
+		}
+	}
 }
