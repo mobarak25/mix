@@ -650,6 +650,39 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {};
@@ -1733,43 +1766,43 @@ var staticRenderFns = [
           _c("div", { staticClass: "col-lg-6" }, [
             _c("div", { staticClass: "d-flex align-items-center" }, [
               _c("span", { staticClass: "bullet d-flex align-items-center" }, [
-                _c("a", { attrs: { href: "#" } }),
+                _c("a", { attrs: { href: "#" } }, [_c("em", [_vm._v(" ")])]),
                 _vm._v(" "),
                 _c("i")
               ]),
               _vm._v(" "),
               _c("span", { staticClass: "bullet d-flex align-items-center" }, [
-                _c("a", { attrs: { href: "#" } }),
+                _c("a", { attrs: { href: "#" } }, [_c("em", [_vm._v(" ")])]),
                 _vm._v(" "),
                 _c("i")
               ]),
               _vm._v(" "),
               _c("span", { staticClass: "bullet d-flex align-items-center" }, [
-                _c("a", { attrs: { href: "#" } }),
+                _c("a", { attrs: { href: "#" } }, [_c("em", [_vm._v(" ")])]),
                 _vm._v(" "),
                 _c("i")
               ]),
               _vm._v(" "),
               _c("span", { staticClass: "bullet d-flex align-items-center" }, [
-                _c("a", { attrs: { href: "#" } }),
+                _c("a", { attrs: { href: "#" } }, [_c("em", [_vm._v(" ")])]),
                 _vm._v(" "),
                 _c("i")
               ]),
               _vm._v(" "),
               _c("span", { staticClass: "bullet d-flex align-items-center" }, [
-                _c("a", { attrs: { href: "#" } }),
+                _c("a", { attrs: { href: "#" } }, [_c("em", [_vm._v(" ")])]),
                 _vm._v(" "),
                 _c("i")
               ]),
               _vm._v(" "),
               _c("span", { staticClass: "bullet d-flex align-items-center" }, [
-                _c("a", { attrs: { href: "#" } }),
+                _c("a", { attrs: { href: "#" } }, [_c("em", [_vm._v(" ")])]),
                 _vm._v(" "),
                 _c("i")
               ]),
               _vm._v(" "),
               _c("span", { staticClass: "bullet d-flex align-items-center" }, [
-                _c("a", { attrs: { href: "#" } })
+                _c("a", { attrs: { href: "#" } }, [_c("em", [_vm._v(" ")])])
               ])
             ])
           ]),
@@ -1861,49 +1894,49 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("footer", { staticClass: "home-footer" }, [
+    return _c("footer", { staticClass: "home-footer home-footer-two" }, [
       _c("div", { staticClass: "home-block" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-lg-6" }, [
             _c("div", { staticClass: "d-flex align-items-center" }, [
               _c("span", { staticClass: "bullet d-flex align-items-center" }, [
-                _c("a", { attrs: { href: "#" } }),
+                _c("a", { attrs: { href: "#" } }, [_c("em", [_vm._v(" ")])]),
                 _vm._v(" "),
                 _c("i")
               ]),
               _vm._v(" "),
               _c("span", { staticClass: "bullet d-flex align-items-center" }, [
-                _c("a", { attrs: { href: "#" } }),
+                _c("a", { attrs: { href: "#" } }, [_c("em", [_vm._v(" ")])]),
                 _vm._v(" "),
                 _c("i")
               ]),
               _vm._v(" "),
               _c("span", { staticClass: "bullet d-flex align-items-center" }, [
-                _c("a", { attrs: { href: "#" } }),
+                _c("a", { attrs: { href: "#" } }, [_c("em", [_vm._v(" ")])]),
                 _vm._v(" "),
                 _c("i")
               ]),
               _vm._v(" "),
               _c("span", { staticClass: "bullet d-flex align-items-center" }, [
-                _c("a", { attrs: { href: "#" } }),
+                _c("a", { attrs: { href: "#" } }, [_c("em", [_vm._v(" ")])]),
                 _vm._v(" "),
                 _c("i")
               ]),
               _vm._v(" "),
               _c("span", { staticClass: "bullet d-flex align-items-center" }, [
-                _c("a", { attrs: { href: "#" } }),
+                _c("a", { attrs: { href: "#" } }, [_c("em", [_vm._v(" ")])]),
                 _vm._v(" "),
                 _c("i")
               ]),
               _vm._v(" "),
               _c("span", { staticClass: "bullet d-flex align-items-center" }, [
-                _c("a", { attrs: { href: "#" } }),
+                _c("a", { attrs: { href: "#" } }, [_c("em", [_vm._v(" ")])]),
                 _vm._v(" "),
                 _c("i")
               ]),
               _vm._v(" "),
               _c("span", { staticClass: "bullet d-flex align-items-center" }, [
-                _c("a", { attrs: { href: "#" } })
+                _c("a", { attrs: { href: "#" } }, [_c("em", [_vm._v(" ")])])
               ])
             ])
           ]),
@@ -1912,6 +1945,14 @@ var staticRenderFns = [
             _c("div", { staticClass: "text-lg-right home-ftr-right" }, [
               _c("span", [
                 _vm._v("43 years manufacturing industrial equipment")
+              ]),
+              _vm._v(" "),
+              _c("span", [
+                _c("a", { attrs: { href: "#" } }, [_vm._v("Publications")]),
+                _vm._v(" "),
+                _c("a", { attrs: { href: "#" } }, [_vm._v("Career")]),
+                _vm._v(" "),
+                _c("a", { attrs: { href: "#" } }, [_vm._v("Contact Us")])
               ])
             ])
           ])

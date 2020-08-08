@@ -42,31 +42,45 @@
                         <div class="col-lg-6">
                             <div class="d-flex align-items-center">
                                 <span class="bullet d-flex align-items-center">
-                                    <a href="#"></a>
+                                    <a href="#">
+                                        <em>&nbsp;</em>
+                                    </a>
                                     <i></i>
                                 </span>
                                 <span class="bullet d-flex align-items-center">
-                                    <a href="#"></a>
+                                    <a href="#">
+                                        <em>&nbsp;</em>
+                                    </a>
                                     <i></i>
                                 </span>
                                 <span class="bullet d-flex align-items-center">
-                                    <a href="#"></a>
+                                    <a href="#">
+                                        <em>&nbsp;</em>
+                                    </a>
                                     <i></i>
                                 </span>
                                 <span class="bullet d-flex align-items-center">
-                                    <a href="#"></a>
+                                    <a href="#">
+                                        <em>&nbsp;</em>
+                                    </a>
                                     <i></i>
                                 </span>
                                 <span class="bullet d-flex align-items-center">
-                                    <a href="#"></a>
+                                    <a href="#">
+                                        <em>&nbsp;</em>
+                                    </a>
                                     <i></i>
                                 </span>
                                 <span class="bullet d-flex align-items-center">
-                                    <a href="#"></a>
+                                    <a href="#">
+                                        <em>&nbsp;</em>
+                                    </a>
                                     <i></i>
                                 </span>
                                 <span class="bullet d-flex align-items-center">
-                                    <a href="#"></a>
+                                    <a href="#">
+                                        <em>&nbsp;</em>
+                                    </a>
                                 </span>
                             </div>
                         </div>
@@ -132,43 +146,62 @@
                 </div>
             </div>
 
-            <footer class="home-footer">
+            <footer class="home-footer home-footer-two">
                 <div class="home-block">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="d-flex align-items-center">
                                 <span class="bullet d-flex align-items-center">
-                                    <a href="#"></a>
+                                    <a href="#">
+                                        <em>&nbsp;</em>
+                                    </a>
                                     <i></i>
                                 </span>
                                 <span class="bullet d-flex align-items-center">
-                                    <a href="#"></a>
+                                    <a href="#">
+                                        <em>&nbsp;</em>
+                                    </a>
                                     <i></i>
                                 </span>
                                 <span class="bullet d-flex align-items-center">
-                                    <a href="#"></a>
+                                    <a href="#">
+                                        <em>&nbsp;</em>
+                                    </a>
                                     <i></i>
                                 </span>
                                 <span class="bullet d-flex align-items-center">
-                                    <a href="#"></a>
+                                    <a href="#">
+                                        <em>&nbsp;</em>
+                                    </a>
                                     <i></i>
                                 </span>
                                 <span class="bullet d-flex align-items-center">
-                                    <a href="#"></a>
+                                    <a href="#">
+                                        <em>&nbsp;</em>
+                                    </a>
                                     <i></i>
                                 </span>
                                 <span class="bullet d-flex align-items-center">
-                                    <a href="#"></a>
+                                    <a href="#">
+                                        <em>&nbsp;</em>
+                                    </a>
                                     <i></i>
                                 </span>
                                 <span class="bullet d-flex align-items-center">
-                                    <a href="#"></a>
+                                    <a href="#">
+                                        <em>&nbsp;</em>
+                                    </a>
                                 </span>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="text-lg-right home-ftr-right">
                                 <span>43 years manufacturing industrial equipment</span>
+                                <span>
+                                    <a href="#">Publications</a>
+                                    <a href="#">Career</a>
+                                    <a href="#">Contact Us</a>
+                                </span>
                             </div>
                         </div>
                     </div>

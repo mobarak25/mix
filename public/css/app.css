@@ -966,6 +966,9 @@ ul {
   font-size: 20px;
   line-height: 26px;
 }
+.company-summery .site-btn {
+  padding-left: 0;
+}
 
 .company-indicator {
   background-color: #eca633;
@@ -988,13 +991,24 @@ ul {
   border-top: 1px solid #dedede;
 }
 .home-footer .bullet a {
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
-  border: 5px solid #fff;
+  border: 1px dashed #b8b8b8;
   border-radius: 50%;
-  background-color: #b8b8b8;
   position: relative;
+}
+.home-footer .bullet a em {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #b8b8b8;
 }
 .home-footer .bullet i {
   width: 20px;
@@ -1005,8 +1019,36 @@ ul {
 }
 .home-footer .home-ftr-right span {
   color: #3f3f3f;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 26px;
+}
+.home-footer .home-ftr-right span a {
+  margin: 0 12px;
+  display: inline-block;
+}
+.home-footer .home-ftr-right span a:last-child {
+  margin-right: 0;
+  color: #4c4d4f;
+}
+.home-footer .home-ftr-right span:first-child {
+  padding-right: 15%;
+}
+.home-footer::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  background-color: #dedede;
+}
+
+.home-footer-two .home-block {
+  padding: 0 50px;
+  max-width: 100%;
 }
 
 .career-search {

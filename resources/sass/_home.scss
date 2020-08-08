@@ -199,6 +199,7 @@
 		padding-bottom: 32px;
 		@include font(text-color, 20px, 26px, false)
 	}
+	.site-btn{padding-left: 0;}
 }
 .company-indicator{
 	background-color: map-get($colors , brand);
@@ -218,13 +219,16 @@
 	border-top: 1px solid #dedede;
 	.bullet{
 		a{
-			width: 17px;
-			height: 17px;
+			width: 20px;
+			height: 20px;
 			display: inline-block;
-			border: 5px solid #fff;
+			border: 1px dashed #b8b8b8;
 			border-radius: 50%;
-			background-color: #b8b8b8;
 			position: relative;
+			em{
+				@include chart-circle(10px, 10px);
+				background-color: #b8b8b8;
+			}
 		}
 		i{
 			width: 20px;
@@ -236,7 +240,27 @@
 	}
 	.home-ftr-right{ 
 		span{
-			@include font(title-color, 20px, 26px, false);
+			@include font(title-color, 16px, 26px, false);
+			a{
+				margin: 0 12px;
+				display: inline-block;
+				&:last-child{
+					margin-right: 0;
+					color: #4c4d4f;
+				}
+			}
+			&:first-child{
+				padding-right: 15%;
+			}
 		}
 	}
+
+	&::after{
+		@include sudo(1px, 100%, left, 50%,top,0, false);
+		background-color: #dedede;
+	}
+}
+.home-footer-two .home-block{
+	padding: 0 50px;
+	max-width: 100%;
 }
