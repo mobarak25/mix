@@ -2311,12 +2311,59 @@ textarea.comment-filed {
 
 .directors {
   padding: 0;
-  margin: 0;
-  display: flex;
+  margin: 0 0 60px;
+  overflow: hidden;
+  background-color: #fff9f9;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border: 1px solid #fff9f9;
+}
+.directors:hover {
+  background-color: #fbfdfb;
+  border-color: #f1aa24;
 }
 
 .directors-image {
-  width: 200px;
+  width: 315px;
+}
+.directors-image img {
+  max-width: 100%;
+}
+
+.directors-desc {
+  width: calc(100% - 315px);
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.directors-desc h3 {
+  color: #3f3f3f;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.directors-desc h4 {
+  padding-bottom: 16px;
+  color: #3f3f3f;
+  font-size: 25px;
+  line-height: 40px;
+}
+.directors-desc p {
+  color: #717171;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.directors-in {
+  padding: 0;
+  margin: 0;
+}
+.directors-in .directors:nth-child(2n) .directors-image {
+  order: 2;
+}
+.directors-in .directors:nth-child(2n) .directors-desc {
+  order: 1;
+  text-align: right;
 }
 
 @media (min-width: 1400px) {
