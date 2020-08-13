@@ -1,0 +1,51 @@
+.about-us-wrapper{
+    padding: 200px 0 0;
+}
+.about-content{
+    padding: 0;
+    margin: 0;
+}
+.about-top{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    h2{
+        padding-bottom: 58px;
+        @include font(title-color, 35px, 46px, semi-bold);
+    }
+
+    p{
+        @include font(text-color, 19px, 36px, text-color);
+        b{
+            color: map-get($colors, title-color);
+            font-weight: map-get($font-weight, bold);
+        }
+    }
+    .about-img{
+        padding: 57px 0 70px;
+    }
+}
+.about-btm{
+    padding: 50px 0;
+    margin: 92px 0 70px;
+    background:lighten(map-get($colors, text-color), 49) url(../images/about-btm-bg.png) no-repeat center top;
+    @include border-radius(8px);
+
+    &::after{
+        @include sudo(2px, 100%, left,50%,top, 0, false);
+        background-color:lighten(map-get($colors, text-color), 40);
+    }
+    .about-btm-box{
+        padding: 0 60px;
+    }
+    .about-btm-right{
+        padding-left: 35px;
+        h3{
+            @include font(title-color, 23px, 34px, false);
+        }
+        span{
+            @include font(brand, 64px, 66px, bold);
+        }
+    }
+}

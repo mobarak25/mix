@@ -1,0 +1,16 @@
+.directors-wrapper{
+    padding: 200px 0 0;
+    h2{
+        padding-bottom: 76px;
+        text-align: center;
+        @include font(title-color, 40px, 54px, semi-bold);
+    }
+}
+.directors{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.directors-image{
+    width: 200px;
+}

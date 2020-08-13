@@ -62,6 +62,7 @@
 @mixin button-base($padding) {
 	height: 60px;
 	padding:$padding;
+	border: none;
     @include font(white-color, 20px, 26px, bold);
 	display: inline-block;
 	position: relative;
@@ -149,6 +150,27 @@
 	border-radius: $radius;
 	-webkit-border-radius: $radius;
 	-moz-border-radius: $radius;
+}
+
+
+@mixin placeholder($color-name, $percentage) {
+	&:focus{
+		outline: 0;
+		border-color: map-get($colors, brand);
+	}
+
+	&::placeholder {
+		color:lighten(map-get($colors, $color-name), $percentage);
+		opacity: 1; 
+	}
+
+	&:-ms-input-placeholder {
+		color: lighten(map-get($colors, $color-name), $percentage);
+	}
+
+	&::-ms-input-placeholder {
+		color:lighten(map-get($colors, $color-name), $percentage);
+	}
 }
 
 //media screen

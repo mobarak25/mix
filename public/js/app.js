@@ -683,6 +683,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {};
@@ -1859,36 +1860,42 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "company-summery-wrapper" }, [
-      _c("h5", [_vm._v("Established in 2008")]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "#" } }, [
-        _c("img", {
-          staticClass: "img-fluid",
-          attrs: { src: "images/company-logo-1.png", alt: "Company logo" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "company-summery" }, [
-        _c("p", [
-          _vm._v(
-            "The Ceramics industry is a growing manufacturing sector in Bangladesh. The industry started during the late 1950s when the first ceramic industrial plants were established."
-          )
+    return _c(
+      "div",
+      { staticClass: "company-summery-wrapper position-relative" },
+      [
+        _c("div", { staticClass: "indicator" }),
+        _vm._v(" "),
+        _c("h5", [_vm._v("Established in 2008")]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            staticClass: "img-fluid",
+            attrs: { src: "images/company-logo-1.png", alt: "Company logo" }
+          })
         ]),
         _vm._v(" "),
-        _c("p", [
-          _vm._v(
-            "Past 2 decades of economic growth in the country, resulted in growing demand for housing and infrastructures. Index seized the opportunity and expanded its wing to the Ceramics Tiles sector and incorporated it in 2008"
+        _c("div", { staticClass: "company-summery" }, [
+          _c("p", [
+            _vm._v(
+              "The Ceramics industry is a growing manufacturing sector in Bangladesh. The industry started during the late 1950s when the first ceramic industrial plants were established."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Past 2 decades of economic growth in the country, resulted in growing demand for housing and infrastructures. Index seized the opportunity and expanded its wing to the Ceramics Tiles sector and incorporated it in 2008"
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "a",
+            { staticClass: "site-btn no-bg with-arrow", attrs: { href: "#" } },
+            [_vm._v("View Details")]
           )
-        ]),
-        _vm._v(" "),
-        _c(
-          "a",
-          { staticClass: "site-btn no-bg with-arrow", attrs: { href: "#" } },
-          [_vm._v("View Details")]
-        )
-      ])
-    ])
+        ])
+      ]
+    )
   },
   function() {
     var _vm = this

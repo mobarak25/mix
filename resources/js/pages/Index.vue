@@ -131,7 +131,8 @@
                     </div>
                 </div>
 
-                <div class="company-summery-wrapper">
+                <div class="company-summery-wrapper position-relative">
+                    <div class="indicator"></div>
                     <h5>Established in 2008</h5>
                     <a href="#">
                         <img class="img-fluid" src="images/company-logo-1.png" alt="Company logo" />

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*===============================*/
 /*====== DATE:2020-june-08 ======*/
 /*===============================*/
@@ -37,6 +38,7 @@ ul {
 .site-btn {
   height: 60px;
   padding: 16px 30px 12px;
+  border: none;
   color: #fff;
   font-size: 20px;
   line-height: 26px;
@@ -105,6 +107,65 @@ ul {
   color: #eca633;
 }
 
+/*--------Custom Select---------*/
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #fff;
+  background-image: none;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 48px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #c3c3c3;
+}
+
+select {
+  flex: 1;
+  padding: 0 18px;
+  color: #717171;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* Arrow */
+.select::after {
+  width: 22px;
+  height: 100%;
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12px 0 0;
+  background: #fff;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+
+.select:hover::after {
+  color: #f39c12;
+}
+
+/*------End Custom Select-------*/
 /*-----------------------------*/
 /*--------Inner Banner---------*/
 /*-----------------------------*/
@@ -824,6 +885,7 @@ ul {
 .home-btn .site-btn {
   height: 60px;
   padding: 16px 88px 12px 48px;
+  border: none;
   color: #fff;
   font-size: 20px;
   line-height: 26px;
@@ -968,6 +1030,48 @@ ul {
 }
 .company-summery .site-btn {
   padding-left: 0;
+}
+
+.indicator {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -38px;
+  top: 80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #eca633;
+}
+.indicator::after {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  background-color: #eca633;
+}
+.indicator::before {
+  transform: rotate(-28deg);
+  content: "";
+  width: 177px;
+  height: 2px;
+  position: absolute;
+  right: 7px;
+  top: 55px;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  background-color: #eca633;
 }
 
 .company-indicator {
@@ -1412,6 +1516,7 @@ ul {
 .modal-bottom .submit {
   height: 60px;
   padding: 17px 60px;
+  border: none;
   color: #fff;
   font-size: 20px;
   line-height: 26px;
@@ -1979,6 +2084,239 @@ textarea.comment-filed {
 }
 .post-pagination .post-pagination-box a:hover p {
   color: #eca633;
+}
+
+.about-us-wrapper {
+  padding: 200px 0 0;
+}
+
+.about-content {
+  padding: 0;
+  margin: 0;
+}
+
+.about-top {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.about-top h2 {
+  padding-bottom: 58px;
+  color: #3f3f3f;
+  font-size: 35px;
+  line-height: 46px;
+  font-weight: 600;
+}
+.about-top p {
+  color: #717171;
+  font-size: 19px;
+  line-height: 36px;
+}
+.about-top p b {
+  color: #3f3f3f;
+  font-weight: 700;
+}
+.about-top .about-img {
+  padding: 57px 0 70px;
+}
+
+.about-btm {
+  padding: 50px 0;
+  margin: 92px 0 70px;
+  background: #eeeeee url(../images/about-btm-bg.png) no-repeat center top;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+.about-btm::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  background-color: #d7d7d7;
+}
+.about-btm .about-btm-box {
+  padding: 0 60px;
+}
+.about-btm .about-btm-right {
+  padding-left: 35px;
+}
+.about-btm .about-btm-right h3 {
+  color: #3f3f3f;
+  font-size: 23px;
+  line-height: 34px;
+}
+.about-btm .about-btm-right span {
+  color: #eca633;
+  font-size: 64px;
+  line-height: 66px;
+  font-weight: 700;
+}
+
+.contact-us-wrapper {
+  padding: 200px 0 0;
+}
+
+.contact-top {
+  padding: 0 0 82px;
+  margin: 0;
+  text-align: center;
+}
+.contact-top h2 {
+  padding-bottom: 42px;
+  color: #3f3f3f;
+  font-size: 35px;
+  line-height: 54px;
+  font-weight: 600;
+}
+.contact-top p {
+  color: #717171;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.contact-mid {
+  padding: 0 0 67px;
+}
+
+.contact-mid-box {
+  height: 127px;
+  text-align: center;
+  border: 1px solid #c3c3c3;
+  background-color: #fefbf7;
+}
+.contact-mid-box .contact-icon {
+  transform: translateX(-50%);
+  background-color: #eca633;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  left: 50%;
+  top: -27px;
+  box-shadow: inset 0 0 20px 1px #ea9c1c;
+}
+.contact-mid-box .contact-icon i {
+  color: #fff;
+  font-size: 30px;
+  line-height: 30px;
+}
+.contact-mid-box a {
+  padding: 0 15px;
+  color: #717171;
+  font-size: 17px;
+  line-height: 17px;
+  border-right: 1px solid #717171;
+}
+.contact-mid-box a.mail {
+  color: #eca633;
+  font-weight: 700;
+}
+.contact-mid-box a:last-child {
+  border: 0;
+}
+.contact-mid-box address {
+  color: #717171;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.contact-btm {
+  padding: 56px 78px;
+  background: url(../images/about-btm-bg.png) no-repeat center 650px;
+}
+.contact-btm p {
+  padding-bottom: 64px;
+  text-align: center;
+  font-style: italic;
+  color: #3f3f3f;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.input-box {
+  padding-bottom: 28px;
+}
+.input-box label {
+  margin: 0 0 9px;
+  display: block;
+  color: #3f3f3f;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+}
+.input-box .input-field {
+  width: 100%;
+  padding: 11px 18px;
+  margin: 0;
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  color: #717171;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.input-box .input-field:focus {
+  outline: 0;
+  border-color: #eca633;
+}
+.input-box .input-field::-moz-placeholder {
+  color: #d2d2d2;
+  opacity: 1;
+}
+.input-box .input-field:-ms-input-placeholder {
+  color: #d2d2d2;
+  opacity: 1;
+}
+.input-box .input-field::-ms-input-placeholder {
+  color: #d2d2d2;
+  opacity: 1;
+}
+.input-box .input-field::placeholder {
+  color: #d2d2d2;
+  opacity: 1;
+}
+.input-box .input-field:-ms-input-placeholder {
+  color: #d2d2d2;
+}
+.input-box .input-field::-ms-input-placeholder {
+  color: #d2d2d2;
+}
+
+.form-btm {
+  padding-top: 28px;
+}
+.form-btm .site-btn {
+  width: 230px;
+}
+
+.directors-wrapper {
+  padding: 200px 0 0;
+}
+.directors-wrapper h2 {
+  padding-bottom: 76px;
+  text-align: center;
+  color: #3f3f3f;
+  font-size: 40px;
+  line-height: 54px;
+  font-weight: 600;
+}
+
+.directors {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.directors-image {
+  width: 200px;
 }
 
 @media (min-width: 1400px) {
