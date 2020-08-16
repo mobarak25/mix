@@ -44,6 +44,7 @@
     transform: scale(0.9) ;
     @include transition(all, 1s);
     @include absolute(100%, false,left,0,top,0);
+    position: fixed;
     background-color: map-get($colors, white-color );
 }
 .active-menu{

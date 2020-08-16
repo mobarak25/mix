@@ -10,6 +10,10 @@ body {
   font-family: "Muli", sans-serif;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /*==============================*/
 /*=====   Common styles   ======*/
 /*==============================*/
@@ -279,6 +283,7 @@ select {
   position: absolute;
   left: 0;
   top: 0;
+  position: fixed;
   background-color: #fff;
 }
 

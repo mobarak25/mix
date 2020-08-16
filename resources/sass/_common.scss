@@ -5,6 +5,9 @@ body{
 	@include font(text-color, 14px, 20px, regular);
 	font-family: 'Muli', sans-serif;
 }
+.no-scroll{
+    overflow: hidden;
+}
 
 /*==============================*/
 /*=====   Common styles   ======*/

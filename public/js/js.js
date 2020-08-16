@@ -17,7 +17,7 @@ jQuery(document).ready(function ($) {
 
   $('.js-menu-close').click(function () {
     $('.header').removeClass('menu-handel-out');
-    $('.site-menu').removeClass('active-menu')
+    $('.site-menu').removeClass('active-menu');
   })
 
   $('.js-menu-slider').slick({
